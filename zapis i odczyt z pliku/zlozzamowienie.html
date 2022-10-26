@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sklep Janka</title>
+    <meta charset="utf-8">
+    <style>
+        h4{
+            background-color: lightgray;
+        }
+        #produkt{
+            width: 150px;
+            float: left;
+            margin-right: 5px;
+        }
+        #ilosc{
+            width: 300px;
+            float: left;
+        }
+        p{
+            margin-bottom: -25px;
+        }
+        input{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Części samochodowe Janka</h1>
+    <h2>Formularz zamówienia</h2>
+    <form action="przetworzzamowienie.php" method="POST">
+        <div id="produkt">
+            <h4>Produkt</h4>
+            <p>Opony</p><br>
+            <p>Olej</p><br>
+            <p>Świece Zapachowe</p><br>
+            <p>Adres</p><br>
+        </div>
+        <div id="ilosc">
+            <h4>Ilość</h4>
+            <input type="number" name="opony"><br>
+            <input type="number" name="olej"><br>
+            <input type="number" name="swiece"><br>
+            <input type="text" name="adres"><br>
+            <input type="submit" value="Złóż zamówienie">
+        </div>
+    </form>
+<body>
+</html>
